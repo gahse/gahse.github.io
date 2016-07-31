@@ -183,8 +183,21 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 
 if(isMobile===false){
-  alert("computer");
    $("#whatsappli").remove();
+}
+else{
+  var whatsappAnchor = $("#whatsappli > a");
+
+  if(/Android/.test(navigator.userAgent).toLowerCase()){
+    whatsappAnchor.attr("href","intent://send/923132654387#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end");
+  }
+  else if (/iPhone|iPad|iPod/.test(navigator.userAgent).toLowerCase()){
+    whatsappAnchor.attr("href","whatsapp://send?abid=923132654387&text=Hello Ghufran! I am ");
+  }
+  else{
+    $("#whatsappli").remove();
+  }
+  
 }
 
 
