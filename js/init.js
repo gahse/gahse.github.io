@@ -186,9 +186,16 @@ if(isMobile===false){
   alert("computer");
    $("#whatsappli").remove();
 }
-else{
-  alert("Mobile");
-}
+
+
+//skype
+Skype.ui({
+ "name": "chat",
+ "element": "SkypeButton_Call",
+ "participants": ["gahpte"],
+ "imageColor": "white",
+ "imageSize": 32
+ });
 
 });
 
