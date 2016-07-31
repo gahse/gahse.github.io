@@ -194,7 +194,7 @@ Skype.ui({
  "element": "SkypeButton_Call",
  "participants": ["gahpte"],
  "imageColor": "white",
- "imageSize": 32
+ "imageSize": 24
  });
 
 });
