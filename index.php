@@ -29,8 +29,9 @@
    <!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
-
+<?php echo "<script type='text/javascript'> alert(\"hello world\");</script>";?>
 </head>
+
 
 <body>
 
