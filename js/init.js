@@ -213,11 +213,12 @@ Skype.ui({
 });
 
 function loadContent(){
-  $.get("content/aboutMePara.txt", function(data, status){
-    alert("Data: " + data + "\nStatus: " + status);
-    if(status==="success"){
-      $("#aboutMePara").html(data);
-    }
-    
-  });
+  setTimeout(function(){
+    $.get("content/aboutMePara.html", function(data, status){
+      if(status==="success"){
+        $("#aboutMePara").html(data);
+      }
+    });
+
+  },3000);
 }
