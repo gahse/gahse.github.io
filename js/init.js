@@ -200,7 +200,7 @@ else{
   
 }
 
-
+loadContent();
 //skype
 Skype.ui({
  "name": "chat",
@@ -212,10 +212,12 @@ Skype.ui({
 
 });
 
-
-
-
-
-
-
-
+function loadContent(){
+  $.get("content/aboutMePara.txt", function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+    if(status==="success"){
+      $("#aboutMePara").html(data);
+    }
+    
+  });
+}
