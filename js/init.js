@@ -219,6 +219,5 @@ function loadContent(){
         $("#aboutMePara").html(data);
       }
     });
-
   },3000);
 }
