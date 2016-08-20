@@ -224,7 +224,7 @@ function loadContent(){
   setTimeout(function(){
     $.get("content/portfolio.html", function(data, status){
       if(status==="success"){
-        $("#portfolioContainerDiv").html(data);
+        $("#portfolio").html(data);
       }
     });
   },3000);
