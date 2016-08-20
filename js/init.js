@@ -221,11 +221,11 @@ function loadContent(){
     });
   },3000);
 
-  /*setTimeout(function(){
+  setTimeout(function(){
     $.get("content/portfolio.html", function(data, status){
       if(status==="success"){
-        $("#portfolioContainer").html(data);
+        $("#portfolioContainerDiv").html(data);
       }
     });
-  },3000);*/
+  },3000);
 }
