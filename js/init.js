@@ -224,7 +224,7 @@ function loadContent(){
   /*setTimeout(function(){
     $.get("content/portfolio.html", function(data, status){
       if(status==="success"){
-        $("#portfolio").html(data);
+        $("#portfolioContainer").html(data);
       }
     });
   },3000);*/
