@@ -220,4 +220,12 @@ function loadContent(){
       }
     });
   },3000);
+
+  /*setTimeout(function(){
+    $.get("content/portfolio.html", function(data, status){
+      if(status==="success"){
+        $("#portfolio").html(data);
+      }
+    });
+  },3000);*/
 }
